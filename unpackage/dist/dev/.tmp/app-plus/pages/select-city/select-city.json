@@ -1,0 +1,7 @@
+{
+  "titleNView": false,
+  "softinputNavBar": "none",
+  "usingComponents": {
+    "city-select": "/components/city-select/city-select"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "",
+  "navigationBarBackgroundColor": "#f1f1f1",
+  "onReachBottomDistance": 50,
+  "usingComponents": {
+    "uni-popup": "/components/uni-popup/uni-popup",
+    "uni-goods-nav": "/components/uni-goods-nav/uni-goods-nav",
+    "s-tabs": "/components/s-tabs/index",
+    "s-tab": "/components/s-tab/index",
+    "uni-number-box": "/components/uni-number-box/uni-number-box"
+  }
+}

@@ -1,0 +1,230 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+@font-face {
+  font-family: 'iconfont';
+  /* project id 1706238 */
+  src: url("//at.alicdn.com/t/font_1706238_p7xnhbwesn.eot");
+  src: url("//at.alicdn.com/t/font_1706238_p7xnhbwesn.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1706238_p7xnhbwesn.woff2") format("woff2"), url("//at.alicdn.com/t/font_1706238_p7xnhbwesn.woff") format("woff"), url("//at.alicdn.com/t/font_1706238_p7xnhbwesn.ttf") format("truetype"), url("//at.alicdn.com/t/font_1706238_p7xnhbwesn.svg#iconfont") format("svg");
+}
+.iconfont.data-v-efc2db8e {
+  font-family: "iconfont" !important;
+  font-size: 80rpx;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2rpx;
+  -moz-osx-font-smoothing: grayscale;
+  color: #dd524d;
+}
+.uni-fab.data-v-efc2db8e {
+  position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  z-index: 10;
+}
+.uni-fab--active.data-v-efc2db8e {
+  opacity: 1;
+}
+.uni-fab--leftBottom.data-v-efc2db8e {
+  left: 5px;
+  bottom: 20px;
+  padding: 10px;
+}
+.uni-fab--leftTop.data-v-efc2db8e {
+  left: 5px;
+  top: 30px;
+  padding: 10px;
+}
+.uni-fab--rightBottom.data-v-efc2db8e {
+  right: 5px;
+  bottom: 50px;
+  padding: 10px;
+}
+.uni-fab--rightTop.data-v-efc2db8e {
+  right: 5px;
+  top: 30px;
+  padding: 10px;
+}
+.uni-fab__circle.data-v-efc2db8e {
+  position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  width: 55px;
+  height: 55px;
+  background-color: #3c3e49;
+  border-radius: 55px;
+  z-index: 11;
+}
+.uni-fab__circle--leftBottom.data-v-efc2db8e {
+  left: 15px;
+  bottom: 60px;
+}
+.uni-fab__circle--leftTop.data-v-efc2db8e {
+  left: 15px;
+  top: 40px;
+}
+.uni-fab__circle--rightBottom.data-v-efc2db8e {
+  right: 15px;
+  bottom: 60px;
+}
+.uni-fab__circle--rightTop.data-v-efc2db8e {
+  right: 15px;
+  top: 40px;
+}
+.uni-fab__circle--left.data-v-efc2db8e {
+  left: 0;
+}
+.uni-fab__circle--right.data-v-efc2db8e {
+  right: 0;
+}
+.uni-fab__circle--top.data-v-efc2db8e {
+  top: 0;
+}
+.uni-fab__circle--bottom.data-v-efc2db8e {
+  bottom: 0;
+}
+.uni-fab__plus.data-v-efc2db8e {
+  font-weight: bold;
+}
+.uni-fab__plus--active.data-v-efc2db8e {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+.uni-fab__content.data-v-efc2db8e {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  border-radius: 55px;
+  overflow: hidden;
+  -webkit-transition-property: width, height;
+  transition-property: width, height;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  width: 55px;
+  border-color: #DDDDDD;
+  border-width: 1rpx;
+  border-style: solid;
+}
+.uni-fab__content--other-platform.data-v-efc2db8e {
+  border-width: 0px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+}
+.uni-fab__content--left.data-v-efc2db8e {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+}
+.uni-fab__content--right.data-v-efc2db8e {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+}
+.uni-fab__content--flexDirection.data-v-efc2db8e {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+}
+.uni-fab__content--flexDirectionStart.data-v-efc2db8e {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+}
+.uni-fab__content--flexDirectionEnd.data-v-efc2db8e {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+}
+.uni-fab__item.data-v-efc2db8e {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  width: 55px;
+  height: 55px;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.uni-fab__item .iconfont.data-v-efc2db8e {
+    font-size: 50rpx;
+    color: #4399fc;
+}
+.uni-fab__item--active.data-v-efc2db8e {
+  opacity: 1;
+}
+.uni-fab__item-image.data-v-efc2db8e {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 3px;
+}
+.uni-fab__item-text.data-v-efc2db8e {
+  color: #333;
+  font-size: 26rpx;
+}
+.uni-fab__item--first.data-v-efc2db8e {
+  width: 55px;
+}
+
