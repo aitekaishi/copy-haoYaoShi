@@ -1,15 +1,16 @@
 import ajax from './api'
 import CommonUtils from '@/common/common.js'
+let kad = 'https://www.360kad.com/'
+let fangkuaiyi = 'http://gateway.fangkuaiyi.com/'
+// #ifdef H5
+kad = '/kad'
+fangkuaiyi = '/fangkuaiyi'
+// #endif
 
 export default {
 	//获取新品上市数据
     queryProductsList (listParams, success, fail, error) {
-		// #ifdef MP-WEIXIN
-		ajax.get(`https://www.360kad.com/DataPlatform/GetIndexGuessLikeProducts${CommonUtils.json2url(listParams)}`,'application/json', null, success, fail, error)
-		// #endif
-		// #ifdef H5
-		ajax.get(`/kad/DataPlatform/GetIndexGuessLikeProducts${CommonUtils.json2url(listParams)}`,'application/json', null, success, fail, error)
-		// #endif
+		ajax.get(`${kad}DataPlatform/GetIndexGuessLikeProducts${CommonUtils.json2url(listParams)}`,'application/json', null, success, fail, error)
     },
 	//小程序根据经纬度获取位置
 	getLocation (listParams, success, fail, error) {
@@ -21,29 +22,14 @@ export default {
 	},
 	//获取List
 	getHeadDataList (listParams, success, fail, error) {
-	  // #ifdef MP-WEIXIN
-	  ajax.get(`http://gateway.fangkuaiyi.com/mobile/home/getHeadData${CommonUtils.json2url(listParams)}`,'application/json', null, success, fail, error)
-	  // #endif
-	  // #ifdef H5
-	  ajax.get(`/fangkuaiyi/mobile/home/getHeadData${CommonUtils.json2url(listParams)}`,'application/json', null, success, fail, error)
-	  // #endif
+	  ajax.get(`${fangkuaiyi}mobile/home/getHeadData${CommonUtils.json2url(listParams)}`,'application/json', null, success, fail, error)
 	},
 	getTailDataList (listParams, success, fail, error) {
-	  // #ifdef MP-WEIXIN
-	  ajax.get(`http://gateway.fangkuaiyi.com/mobile/home/getTailData${CommonUtils.json2url(listParams)}`,'application/json', null, success, fail, error)
-	  // #endif
-	  // #ifdef H5
-	  ajax.get(`/fangkuaiyi/mobile/home/getTailData${CommonUtils.json2url(listParams)}`,'application/json', null, success, fail, error)
-	  // #endif
+	  ajax.get(`${fangkuaiyi}mobile/home/getTailData${CommonUtils.json2url(listParams)}`,'application/json', null, success, fail, error)
 	},
 	//获取健康新闻
 	getNewList (listParams, success, fail, error) {
-	  // #ifdef MP-WEIXIN
-	  ajax.get(`http://gateway.fangkuaiyi.com/layout/h5/index${CommonUtils.json2url(listParams)}`,'application/json', null, success, fail, error)
-	  // #endif
-	  // #ifdef H5
-	  ajax.get(`/fangkuaiyi/layout/h5/index${CommonUtils.json2url(listParams)}`,'application/json', null, success, fail, error)
-	  // #endif
+	  ajax.get(`${fangkuaiyi}layout/h5/index${CommonUtils.json2url(listParams)}`,'application/json', null, success, fail, error)
 	},
 	//获取分类信息
 	getcategoryList (success, fail, error) {

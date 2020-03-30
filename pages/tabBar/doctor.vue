@@ -79,7 +79,7 @@ export default {
 		@include flex(space-between);
 		.image{
 			image{
-				width: 15vw;
+				@include wh(15vw,15vw);
 			}
 		}
 		.content{

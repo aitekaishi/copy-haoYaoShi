@@ -29,14 +29,14 @@
 /* 边框颜色 */
 /* 图片加载中颜色 */
 /* 行为相关颜色 */
-.form-list .uni-input.data-v-fb10bd58 {
+.form-list .uni-input.data-v-6ab0d658 {
   background: #fff;
   height: 60rpx;
   margin: 20rpx;
   padding: 20rpx;
   border-radius: 5rpx;
 }
-.form-list .center-input.data-v-fb10bd58 {
+.form-list .center-input.data-v-6ab0d658 {
   display: -webkit-box;
   display: flex;
   display: -webkit-flex;
@@ -47,11 +47,11 @@
   -webkit-align-items: center;
           align-items: center;
 }
-.form-list .center-input .uni-input.data-v-fb10bd58 {
+.form-list .center-input .uni-input.data-v-6ab0d658 {
     width: 60vw;
     margin-right: 0;
 }
-.form-list .center-input .image-code.data-v-fb10bd58 {
+.form-list .center-input .image-code.data-v-6ab0d658 {
     width: 40vw;
     text-align: center;
     background: #fa436a;
@@ -60,33 +60,33 @@
     margin-right: 20rpx;
     color: #fff;
 }
-.form-list .center-input .image-code image.data-v-fb10bd58 {
+.form-list .center-input .image-code image.data-v-6ab0d658 {
       width: 223rpx;
       height: 100rpx;
 }
-.form-list .center-input .password-input.data-v-fb10bd58 {
+.form-list .center-input .password-input.data-v-6ab0d658 {
     width: 80vw;
 }
-.form-list .center-input .password-image.data-v-fb10bd58 {
+.form-list .center-input .password-image.data-v-6ab0d658 {
     width: 10vw;
     color: #606266;
     background: #FFF;
     text-align: right;
     padding-right: 20rpx;
 }
-.form-list .center-input .sms-code.data-v-fb10bd58 {
+.form-list .center-input .sms-code.data-v-6ab0d658 {
     font-size: 24rpx;
 }
-.form-list .center-input .sms-code2.data-v-fb10bd58 {
+.form-list .center-input .sms-code2.data-v-6ab0d658 {
     font-size: 22rpx;
     background: #606266;
 }
-.warning.data-v-fb10bd58 {
+.warning.data-v-6ab0d658 {
   padding: 0 20rpx 20rpx 20rpx;
   font-size: 24rpx;
   color: #fa436a;
 }
-.point.data-v-fb10bd58 {
+.point.data-v-6ab0d658 {
   display: -webkit-box;
   display: flex;
   display: -webkit-flex;
@@ -99,35 +99,35 @@
   padding: 0 20rpx;
   font-size: 24rpx;
 }
-.point view.data-v-fb10bd58:nth-of-type(1) {
+.point view.data-v-6ab0d658:nth-of-type(1) {
     color: #606266;
 }
-.login-button.data-v-fb10bd58 {
+.login-button.data-v-6ab0d658 {
   padding: 50rpx;
 }
-.third-party.data-v-fb10bd58 {
+.third-party.data-v-6ab0d658 {
   text-align: center;
 }
-.third-party .title.data-v-fb10bd58 {
+.third-party .title.data-v-6ab0d658 {
     margin-bottom: 30rpx;
 }
-.third-party .qq.data-v-fb10bd58 {
+.third-party .qq.data-v-6ab0d658 {
     width: 90rpx;
     margin-bottom: 10rpx;
 }
-.third-party .home.data-v-fb10bd58 {
+.third-party .home.data-v-6ab0d658 {
     width: 50rpx;
 }
-.third-party .tel image.data-v-fb10bd58 {
+.third-party .tel image.data-v-6ab0d658 {
     margin-top: 30rpx;
     width: 350rpx;
 }
-.third-party .dowload.data-v-fb10bd58 {
+.third-party .dowload.data-v-6ab0d658 {
     margin: 20rpx;
     font-size: 24rpx;
     color: #fa436a;
 }
-.third-party .bottom.data-v-fb10bd58 {
+.third-party .bottom.data-v-6ab0d658 {
     padding: 20rpx;
     text-align: start;
     display: -webkit-box;
@@ -140,7 +140,7 @@
     -webkit-align-items: center;
             align-items: center;
 }
-.third-party .bottom image.data-v-fb10bd58 {
+.third-party .bottom image.data-v-6ab0d658 {
       width: 25rpx;
       position: relative;
       top: -30rpx;
@@ -148,22 +148,22 @@
       bottom: auto;
       left: auto;
 }
-.third-party .bottom .title.data-v-fb10bd58 {
+.third-party .bottom .title.data-v-6ab0d658 {
       margin-left: 10rpx;
       font-size: 24rpx;
       color: #606266;
 }
-.third-party .bottom .title text.data-v-fb10bd58 {
+.third-party .bottom .title text.data-v-6ab0d658 {
         color: #fa436a;
 }
-.logined .logined-h.data-v-fb10bd58 {
+.logined .logined-h.data-v-6ab0d658 {
   padding: 20rpx;
   background: #fa436a;
   border-top: 1rpx solid #c0c4cc;
   color: #FFF;
   height: 200rpx;
 }
-.logined .logined-h .logined-header.data-v-fb10bd58 {
+.logined .logined-h .logined-header.data-v-6ab0d658 {
     display: -webkit-box;
     display: flex;
     display: -webkit-flex;
@@ -174,17 +174,17 @@
     -webkit-align-items: center;
             align-items: center;
 }
-.logined .logined-h .logined-header .logined-header-img image.data-v-fb10bd58 {
+.logined .logined-h .logined-header .logined-header-img image.data-v-6ab0d658 {
       width: 100rpx;
 }
-.logined .logined-h .logined-header .logined-header-name.data-v-fb10bd58 {
+.logined .logined-h .logined-header .logined-header-name.data-v-6ab0d658 {
       margin: 0 10rpx;
       -webkit-box-flex: 1;
       -webkit-flex: 1;
               flex: 1;
       text-align: left;
 }
-.logined .logined-h .logined-header .logined-wallet.data-v-fb10bd58 {
+.logined .logined-h .logined-header .logined-wallet.data-v-6ab0d658 {
       display: -webkit-box;
       display: flex;
       display: -webkit-flex;
@@ -195,10 +195,10 @@
       -webkit-align-items: center;
               align-items: center;
 }
-.logined .logined-h .logined-header .logined-wallet view.data-v-fb10bd58 {
+.logined .logined-h .logined-header .logined-wallet view.data-v-6ab0d658 {
         margin-left: 10rpx;
 }
-.logined .logined-header-content.data-v-fb10bd58 {
+.logined .logined-header-content.data-v-6ab0d658 {
   margin: 0 auto;
   padding: 40rpx 0 20rpx 0;
   width: 95%;
@@ -212,7 +212,7 @@
   left: auto;
   text-align: center;
 }
-.logined .logined-header-content .img.data-v-fb10bd58 {
+.logined .logined-header-content .img.data-v-6ab0d658 {
     width: 100%;
     display: -webkit-box;
     display: flex;
@@ -224,28 +224,28 @@
     -webkit-align-items: center;
             align-items: center;
 }
-.logined .logined-header-content .img image.data-v-fb10bd58 {
+.logined .logined-header-content .img image.data-v-6ab0d658 {
       width: 7vw;
       height: 7vw;
 }
-.logined .logined-header-content .text.data-v-fb10bd58 {
+.logined .logined-header-content .text.data-v-6ab0d658 {
     margin: 16rpx auto;
 }
-.logined .logined-list.data-v-fb10bd58 {
+.logined .logined-list.data-v-6ab0d658 {
   margin-top: 60rpx;
   padding: 20rpx;
 }
-.WX.data-v-fb10bd58 {
+.WX.data-v-6ab0d658 {
   background: #F3F5F7;
 }
-.WX button.data-v-fb10bd58::after {
+.WX button.data-v-6ab0d658::after {
     border: none;
 }
-.WX button.data-v-fb10bd58 {
+.WX button.data-v-6ab0d658 {
     line-height: 1;
     background: #F3F5F7;
 }
-.WX .iconfont.data-v-fb10bd58 {
+.WX .iconfont.data-v-6ab0d658 {
     font-size: 100rpx;
     color: #84D945;
 }

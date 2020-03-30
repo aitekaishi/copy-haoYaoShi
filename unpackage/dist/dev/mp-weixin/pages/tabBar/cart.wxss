@@ -126,6 +126,7 @@
 }
 .shopping-view .shopping-view-center image.data-v-7af6b32d {
       width: 20vw;
+      height: 20vw;
 }
 .shopping-view.data-v-7af6b32d,
   .shopping-view .shopping-view-right.data-v-7af6b32d {

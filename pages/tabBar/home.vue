@@ -81,7 +81,7 @@
 			</cmd-cell-item>
 		</view>
 		<view class="goods-list" v-for="(item, index) in TailDataList.goodTopic" :key="index">
-			<image style="width: 100vw;" :src="item.picUrl" mode="widthFix"></image>
+			<image style="width: 100vw;height: 66vw;" :src="item.picUrl" mode="widthFix"></image>
 			<view class="product-list scroll-view">
 				<scroll-view scroll-x="true">
 					<view class="product scroll-prodnct" v-for="(subItem, subIndex) in item.goodProducts" :key="subIndex" @click="toGoods(subItem)">
@@ -392,7 +392,6 @@ export default {
 	margin-top: 20upx;
 	padding-top: 10upx;
 	.img {
-		width: 100%;
 		@include flex(center);
 		image {
 			@include wh(10vw, 10vw);
@@ -454,7 +453,7 @@ export default {
 			@include borderRadius(20upx) margin: 0 0 15upx 0;
 			box-shadow: 0upx 5upx 25upx rgba(0, 0, 0, 0.1);
 			image {
-				width: 100%;
+				@include wh(100%,100%);
 			}
 			.name {
 				@include line-clamp(2, 75upx) padding: 0 4%;
@@ -477,6 +476,7 @@ export default {
 	.scroll-view {
 		height: 40vw;
 		white-space: nowrap;
+		margin-bottom: 30upx;
 		.scroll-prodnct {
 			width: 30%;
 			margin: 20upx;
@@ -484,7 +484,7 @@ export default {
 			.image {
 				text-align: center;
 				image {
-					width: 80%;
+					@include wh(80%,70%);
 				}
 			}
 			.name {

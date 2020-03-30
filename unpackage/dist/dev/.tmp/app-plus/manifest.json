@@ -106,7 +106,6 @@
         }
       }
     },
-    "arguments": "{\"id\":0,\"name\":\"pages/goods/goods\",\"pathName\":\"pages/goods/goods\",\"query\":\"\"}",
     "allowsInlineMediaPlayback": true,
     "safearea": {
       "background": "#ffffff",
@@ -160,7 +159,11 @@
           "text": "我的"
         }
       ],
-      "height": "50px"
+      "height": "50px",
+      "child": [
+        "lauchwebview"
+      ],
+      "selected": 0
     }
   },
   "usingComponents": {}

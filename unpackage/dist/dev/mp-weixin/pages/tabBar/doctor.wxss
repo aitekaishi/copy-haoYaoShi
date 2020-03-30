@@ -53,6 +53,7 @@
 }
 .doctor-list .doctor-list-content .image image.data-v-007f286c {
       width: 15vw;
+      height: 15vw;
 }
 .doctor-list .doctor-list-content .content.data-v-007f286c {
       -webkit-flex-basis: 60vw;

@@ -362,7 +362,7 @@ export default {
 	.shopping-view-center {
 		width: 30vw;
 		image {
-			width: 20vw;
+			@include wh(20vw,20vw);
 		}
 	}
 	,

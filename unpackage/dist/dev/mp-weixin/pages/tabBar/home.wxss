@@ -75,7 +75,6 @@
   padding-top: 10rpx;
 }
 .category-list .img.data-v-5d98356c {
-    width: 100%;
     display: -webkit-box;
     display: flex;
     display: -webkit-flex;
@@ -179,6 +178,7 @@
 }
 .goods-list .product-list .product image.data-v-5d98356c {
       width: 100%;
+      height: 100%;
 }
 .goods-list .product-list .product .name.data-v-5d98356c {
       display: -webkit-box;
@@ -213,6 +213,7 @@
 .goods-list .scroll-view.data-v-5d98356c {
   height: 40vw;
   white-space: nowrap;
+  margin-bottom: 30rpx;
 }
 .goods-list .scroll-view .scroll-prodnct.data-v-5d98356c {
     width: 30%;
@@ -224,6 +225,7 @@
 }
 .goods-list .scroll-view .scroll-prodnct .image image.data-v-5d98356c {
         width: 80%;
+        height: 70%;
 }
 .goods-list .scroll-view .scroll-prodnct .name.data-v-5d98356c {
       white-space: normal;

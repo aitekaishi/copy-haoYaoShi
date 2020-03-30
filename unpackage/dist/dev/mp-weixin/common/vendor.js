@@ -9991,17 +9991,18 @@ var _buzi = _interopRequireDefault(__webpack_require__(/*! ./buzi.server */ 22))
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _api = _interopRequireDefault(__webpack_require__(/*! ./api */ 23));
-var _common = _interopRequireDefault(__webpack_require__(/*! @/common/common.js */ 17));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
+var _common = _interopRequireDefault(__webpack_require__(/*! @/common/common.js */ 17));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var kad = 'https://www.360kad.com/';
+var fangkuaiyi = 'http://gateway.fangkuaiyi.com/';var _default =
+
+
+
+
 
 {
   //获取新品上市数据
   queryProductsList: function queryProductsList(listParams, success, fail, error) {
-
-    _api.default.get("https://www.360kad.com/DataPlatform/GetIndexGuessLikeProducts".concat(_common.default.json2url(listParams)), 'application/json', null, success, fail, error);
-
-
-
-
+    _api.default.get("".concat(kad, "DataPlatform/GetIndexGuessLikeProducts").concat(_common.default.json2url(listParams)), 'application/json', null, success, fail, error);
   },
   //小程序根据经纬度获取位置
   getLocation: function getLocation(listParams, success, fail, error) {
@@ -10013,29 +10014,14 @@ var _common = _interopRequireDefault(__webpack_require__(/*! @/common/common.js 
   },
   //获取List
   getHeadDataList: function getHeadDataList(listParams, success, fail, error) {
-
-    _api.default.get("http://gateway.fangkuaiyi.com/mobile/home/getHeadData".concat(_common.default.json2url(listParams)), 'application/json', null, success, fail, error);
-
-
-
-
+    _api.default.get("".concat(fangkuaiyi, "mobile/home/getHeadData").concat(_common.default.json2url(listParams)), 'application/json', null, success, fail, error);
   },
   getTailDataList: function getTailDataList(listParams, success, fail, error) {
-
-    _api.default.get("http://gateway.fangkuaiyi.com/mobile/home/getTailData".concat(_common.default.json2url(listParams)), 'application/json', null, success, fail, error);
-
-
-
-
+    _api.default.get("".concat(fangkuaiyi, "mobile/home/getTailData").concat(_common.default.json2url(listParams)), 'application/json', null, success, fail, error);
   },
   //获取健康新闻
   getNewList: function getNewList(listParams, success, fail, error) {
-
-    _api.default.get("http://gateway.fangkuaiyi.com/layout/h5/index".concat(_common.default.json2url(listParams)), 'application/json', null, success, fail, error);
-
-
-
-
+    _api.default.get("".concat(fangkuaiyi, "layout/h5/index").concat(_common.default.json2url(listParams)), 'application/json', null, success, fail, error);
   },
   //获取分类信息
   getcategoryList: function getcategoryList(success, fail, error) {

@@ -29,7 +29,7 @@
 /* 边框颜色 */
 /* 图片加载中颜色 */
 /* 行为相关颜色 */
-.login-header.data-v-5cde1ae1 {
+.login-header.data-v-761e975d {
   padding: 0 20rpx;
   height: 80rpx;
   background: #fa436a;
@@ -44,18 +44,18 @@
           align-items: center;
   color: #fff;
 }
-.login-header .center-header.data-v-5cde1ae1 {
+.login-header .center-header.data-v-761e975d {
     height: auto;
     overflow: visible;
 }
-.form-list .uni-input.data-v-5cde1ae1 {
+.form-list .uni-input.data-v-761e975d {
   background: #fff;
   height: 60rpx;
   margin: 20rpx;
   padding: 20rpx;
   border-radius: 5rpx;
 }
-.form-list .center-input.data-v-5cde1ae1 {
+.form-list .center-input.data-v-761e975d {
   display: -webkit-box;
   display: flex;
   display: -webkit-flex;
@@ -66,11 +66,11 @@
   -webkit-align-items: center;
           align-items: center;
 }
-.form-list .center-input .uni-input.data-v-5cde1ae1 {
+.form-list .center-input .uni-input.data-v-761e975d {
     width: 60vw;
     margin-right: 0;
 }
-.form-list .center-input .image-code.data-v-5cde1ae1 {
+.form-list .center-input .image-code.data-v-761e975d {
     width: 40vw;
     text-align: center;
     background: #fa436a;
@@ -79,33 +79,33 @@
     margin-right: 20rpx;
     color: #fff;
 }
-.form-list .center-input .image-code image.data-v-5cde1ae1 {
+.form-list .center-input .image-code image.data-v-761e975d {
       width: 223rpx;
       height: 100rpx;
 }
-.form-list .center-input .password-input.data-v-5cde1ae1 {
+.form-list .center-input .password-input.data-v-761e975d {
     width: 80vw;
 }
-.form-list .center-input .password-image.data-v-5cde1ae1 {
+.form-list .center-input .password-image.data-v-761e975d {
     width: 10vw;
     color: #606266;
     background: #FFF;
     text-align: right;
     padding-right: 20rpx;
 }
-.form-list .center-input .sms-code.data-v-5cde1ae1 {
+.form-list .center-input .sms-code.data-v-761e975d {
     font-size: 24rpx;
 }
-.form-list .center-input .sms-code2.data-v-5cde1ae1 {
+.form-list .center-input .sms-code2.data-v-761e975d {
     font-size: 22rpx;
     background: #606266;
 }
-.warning.data-v-5cde1ae1 {
+.warning.data-v-761e975d {
   padding: 0 20rpx 20rpx 20rpx;
   font-size: 24rpx;
   color: #fa436a;
 }
-.agreement.data-v-5cde1ae1 {
+.agreement.data-v-761e975d {
   padding: 20rpx;
   display: -webkit-box;
   display: flex;
@@ -117,31 +117,31 @@
   -webkit-align-items: center;
           align-items: center;
 }
-.agreement ._i.data-v-5cde1ae1 {
+.agreement ._i.data-v-761e975d {
     font-size: 30rpx;
     margin-right: 10rpx;
 }
-.agreement-content.data-v-5cde1ae1 {
+.agreement-content.data-v-761e975d {
   width: 80vw;
   height: 800rpx;
   margin: 0 auto;
   padding: 20rpx;
   background-color: #FFF;
 }
-.agreement-content .agree-name.data-v-5cde1ae1 {
+.agreement-content .agree-name.data-v-761e975d {
     height: 725rpx;
     overflow: scroll;
 }
-.agreement-content .agree-name .title.data-v-5cde1ae1 {
+.agreement-content .agree-name .title.data-v-761e975d {
       text-align: center;
       font-size: 50rpx;
       font-weight: 600;
 }
-.agreement-content .agree-name .title-red.data-v-5cde1ae1 {
+.agreement-content .agree-name .title-red.data-v-761e975d {
       color: #fa436a;
       font-weight: 600;
 }
-.agreement-content .agree-button.data-v-5cde1ae1 {
+.agreement-content .agree-button.data-v-761e975d {
     margin-top: 20rpx;
     display: -webkit-box;
     display: flex;
@@ -153,12 +153,12 @@
     -webkit-align-items: center;
             align-items: center;
 }
-.agreement-content .agree-button button.data-v-5cde1ae1 {
+.agreement-content .agree-button button.data-v-761e975d {
       width: 35vw;
       height: 70rpx;
       line-height: 70rpx;
 }
-.login-button.data-v-5cde1ae1 {
+.login-button.data-v-761e975d {
   padding: 50rpx;
 }
 
