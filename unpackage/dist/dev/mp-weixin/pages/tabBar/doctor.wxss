@@ -29,18 +29,18 @@
 /* 边框颜色 */
 /* 图片加载中颜色 */
 /* 行为相关颜色 */
-.doctor-title.data-v-41bf2468 {
+.doctor-title.data-v-007f286c {
   text-align: center;
   font-size: 24rpx;
   color: #fa436a;
   background-color: #f0ad4e;
   padding: 10rpx;
 }
-.doctor-list.data-v-41bf2468 {
+.doctor-list.data-v-007f286c {
   background: #FFF;
   padding: 30rpx;
 }
-.doctor-list .doctor-list-content.data-v-41bf2468 {
+.doctor-list .doctor-list-content.data-v-007f286c {
     display: -webkit-box;
     display: flex;
     display: -webkit-flex;
@@ -51,28 +51,28 @@
     -webkit-align-items: center;
             align-items: center;
 }
-.doctor-list .doctor-list-content .image image.data-v-41bf2468 {
+.doctor-list .doctor-list-content .image image.data-v-007f286c {
       width: 15vw;
 }
-.doctor-list .doctor-list-content .content.data-v-41bf2468 {
+.doctor-list .doctor-list-content .content.data-v-007f286c {
       -webkit-flex-basis: 60vw;
       /* Safari 6.1+ */
       flex-basis: 60vw;
 }
-.doctor-list .doctor-list-content .content .title text.data-v-41bf2468:nth-of-type(2) {
+.doctor-list .doctor-list-content .content .title text.data-v-007f286c:nth-of-type(2) {
         font-size: 24rpx;
         color: #909399;
         margin-left: 20rpx;
 }
-.doctor-list .doctor-list-content .content.data-v-41bf2468,
-      .doctor-list .doctor-list-content .content .code.data-v-41bf2468 {
+.doctor-list .doctor-list-content .content.data-v-007f286c,
+      .doctor-list .doctor-list-content .content .code.data-v-007f286c {
         font-size: 24rpx;
 }
-.doctor-list .doctor-list-content .content .specialty.data-v-41bf2468 {
+.doctor-list .doctor-list-content .content .specialty.data-v-007f286c {
         font-size: 24rpx;
         color: #4399fc;
 }
-.doctor-list .doctor-list-content .message.data-v-41bf2468 {
+.doctor-list .doctor-list-content .message.data-v-007f286c {
       text-align: center;
       font-size: 28rpx;
 }

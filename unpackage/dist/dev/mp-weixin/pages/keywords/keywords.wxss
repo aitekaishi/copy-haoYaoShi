@@ -29,22 +29,22 @@
 /* 边框颜色 */
 /* 图片加载中颜色 */
 /* 行为相关颜色 */
-.keyword-page.data-v-aea6a572 {
+.keyword-page.data-v-40030f4b {
   background: #fff;
   min-height: 90vh;
 }
-.input-box .iconfont.data-v-aea6a572 {
+.input-box .iconfont.data-v-40030f4b {
   color: #606266;
   font-size: 30rpx !important;
   margin-left: 20rpx;
 }
-.icon-btn.data-v-aea6a572 {
+.icon-btn.data-v-40030f4b {
   margin-left: 20rpx;
 }
-.space.data-v-aea6a572 {
+.space.data-v-40030f4b {
   height: 100rpx;
 }
-.hot-keywords.data-v-aea6a572 {
+.hot-keywords.data-v-40030f4b {
   padding: 20rpx;
   display: -webkit-box;
   display: -webkit-flex;
@@ -55,21 +55,21 @@
   -webkit-flex-wrap: wrap;
           flex-wrap: wrap;
 }
-.hot-keywords .hot-keywords-center.data-v-aea6a572 {
+.hot-keywords .hot-keywords-center.data-v-40030f4b {
     font-size: 26rpx;
     word-break: keep-all;
     margin: 10rpx;
     background: #909399;
     padding: 10rpx 20rpx;
 }
-.hot-keywords-title.data-v-aea6a572 {
+.hot-keywords-title.data-v-40030f4b {
   margin: 30rpx 0 0 30rpx;
   font-size: 28rpx;
 }
-.history.data-v-aea6a572 {
+.history.data-v-40030f4b {
   padding: 20rpx;
 }
-.history .history-title.data-v-aea6a572 {
+.history .history-title.data-v-40030f4b {
     font-size: 28rpx;
     display: -webkit-box;
     display: flex;
@@ -81,7 +81,7 @@
     -webkit-align-items: center;
             align-items: center;
 }
-.history .history-title .iconfont.data-v-aea6a572 {
+.history .history-title .iconfont.data-v-40030f4b {
       font-size: 40rpx;
 }
 

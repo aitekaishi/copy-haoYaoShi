@@ -24,34 +24,34 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.goods-list-page.data-v-53f4a2e6 {
+.goods-list-page.data-v-1f07f062 {
   background: #fff;
   min-height: 100vh;
 }
-.goods-list-page .tab-header.data-v-53f4a2e6 {
+.goods-list-page .tab-header.data-v-1f07f062 {
     position: fixed;
     background: #FFF;
     top: 0;
     z-index: 998;
 }
-.tabs-title.data-v-53f4a2e6 {
+.tabs-title.data-v-1f07f062 {
   color: #333;
 }
-.tabs-title .iconfont.data-v-53f4a2e6 {
+.tabs-title .iconfont.data-v-1f07f062 {
     display: inline-block;
     font-size: 28rpx;
 }
-.check-title.data-v-53f4a2e6 {
+.check-title.data-v-1f07f062 {
   padding: 50rpx 0 0 20rpx;
   font-size: 30rpx;
 }
-.space.data-v-53f4a2e6 {
+.space.data-v-1f07f062 {
   height: 100rpx;
 }
-.space_2.data-v-53f4a2e6 {
+.space_2.data-v-1f07f062 {
   height: 350rpx;
 }
-.empty.data-v-53f4a2e6 {
+.empty.data-v-1f07f062 {
   text-align: center;
 }
 

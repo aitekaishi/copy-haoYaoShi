@@ -30,6 +30,17 @@
   url('//at.alicdn.com/t/font_1706238_p7xnhbwesn.ttf') format('truetype'),
   url('//at.alicdn.com/t/font_1706238_p7xnhbwesn.svg#iconfont') format('svg');
 }
+/* #ifdef APP-PLUS */
+@font-face {
+  font-family: 'iconfont';  /* project id 1706238 */
+  src: url('https//at.alicdn.com/t/font_1706238_p7xnhbwesn.eot');
+  src: url('https//at.alicdn.com/t/font_1706238_p7xnhbwesn.eot?#iefix') format('embedded-opentype'),
+  url('https//at.alicdn.com/t/font_1706238_p7xnhbwesn.woff2') format('woff2'),
+  url('https//at.alicdn.com/t/font_1706238_p7xnhbwesn.woff') format('woff'),
+  url('https//at.alicdn.com/t/font_1706238_p7xnhbwesn.ttf') format('truetype'),
+  url('https//at.alicdn.com/t/font_1706238_p7xnhbwesn.svg#iconfont') format('svg');
+}
+/* #endif */
 .iconfont{
     font-family:"iconfont" !important;
     font-size:50upx;font-style:normal;
