@@ -14,7 +14,7 @@
 		<view class="swiper">
 			<view class="swiper-box">
 				<swiper circular="true" @change="swiperChange">
-					<swiper-item v-for="(item, index) in shoppingDetail.bannerList" :key="index"><image :src="item" @click="toSwiper(item)"></image></swiper-item>
+					<swiper-item v-for="(item, index) in shoppingDetail.bannerList" :key="index"><image lazy-load :src="item" @click="toSwiper(item)"></image></swiper-item>
 				</swiper>
 			</view>
 			<view class="indicator-dots">{{ currentSwiper + 1 }}/{{ shoppingDetail.bannerList.length }}</view>
@@ -132,7 +132,7 @@
 		<uni-popup ref="goodsPopup" type="bottom">
 			<view class="goods-popup">
 				<view class="goods-popup-title">
-					<view><image :src="shoppingDetail.sameSpuGoodsList[0].thumbnailPic" mode="widthFix"></image></view>
+					<view><image lazy-load :src="shoppingDetail.sameSpuGoodsList[0].thumbnailPic" mode="widthFix"></image></view>
 					<view>
 						<view>￥{{shoppingDetail.price}}</view>
 						<view>已选：{{shoppingDetail.spec}}</view>

@@ -45,7 +45,7 @@
 						<view class="title-content">
 							<uni-grid :column="3" :show-border="false" :square="false">
 								<uni-grid-item v-for="(grandSonItem, grandSonIndex) in subItem.list" :key="grandSonIndex" @click="toCategory(grandSonItem)">
-									<view class="img"><image :src="grandSonItem.imageUrl"></image></view>
+									<view class="img"><image lazy-load :src="grandSonItem.imageUrl"></image></view>
 									<view class="text">{{ grandSonItem.name }}</view>
 								</uni-grid-item>
 							</uni-grid>

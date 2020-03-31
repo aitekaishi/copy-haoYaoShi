@@ -53,7 +53,7 @@
 			<view class="product-list">
 				<view class="product" v-for="(item, index) in pagination.productList" :key="index">
 					<view @click="toGoods(item,'good_list')">
-						<image mode="widthFix" :src="item.smallPic"></image>
+						<image lazy-load mode="widthFix" :src="item.smallPic"></image>
 						<view class="name"><text v-if="item.is_overseas">海外购 </text>{{ item.goodsName }}</view>
 						<view class="smallName">{{ item.brief }}</view>
 						<view class="smallName">规格：{{ item.spec }}</view>

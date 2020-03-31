@@ -25,7 +25,7 @@
 				<input class="uni-input" placeholder="请输入手机号码" v-model="phone.name" />
 				<view class="center-input">
 					<view><input class="uni-input" placeholder="请输入图形验证码" v-model="phone.imageCode" /></view>
-					<view class="image-code" @click="getImageCode"><image :src="imageCode"></image></view>
+					<view class="image-code" @click="getImageCode"><image lazy-load :src="imageCode"></image></view>
 				</view>
 				<view class="center-input">
 					<view><input class="uni-input center-input" placeholder="请输入短信验证码" v-model="phone.smsCode" /></view>
@@ -42,7 +42,7 @@
 			<view class="third-party">
 				<view class="title">第三方登录</view>
 				<view v-if="type=='H5'">
-					<image class="qq" src="https://m.ehaoyao.com/_nuxt/img/icon-qq.e1ee8aa.png" mode="widthFix"></image>
+					<image lazy-load class="qq" src="https://m.ehaoyao.com/_nuxt/img/icon-qq.e1ee8aa.png" mode="widthFix"></image>
 					<view class="title">QQ</view>
 				</view>
 				<view class="WX" v-if="type=='WX'">
@@ -50,11 +50,11 @@
 					<view class="title">微信</view>
 				</view>
 				<view class="center-line"></view>
-				<view class="tel"><image src="https://m.ehaoyao.com/_nuxt/img/icon-tel.fd59112.png" mode="widthFix"></image></view>
+				<view class="tel"><image lazy-load src="https://m.ehaoyao.com/_nuxt/img/icon-tel.fd59112.png" mode="widthFix"></image></view>
 				<view class="dowload">下载好药师APP</view>
-				<image class="home" src="https://m.ehaoyao.com/_nuxt/img/icon-index.371df99.png" mode="widthFix" @click="$common.switchTab('./home')"></image>
+				<image lazy-load class="home" src="https://m.ehaoyao.com/_nuxt/img/icon-index.371df99.png" mode="widthFix" @click="$common.switchTab('./home')"></image>
 				<view class="bottom">
-					<view class="image"><image src="https://m.ehaoyao.com/_nuxt/img/icon_tips_warn.82e1507.png" mode="widthFix"></image></view>
+					<view class="image"><image lazy-load src="https://m.ehaoyao.com/_nuxt/img/icon_tips_warn.82e1507.png" mode="widthFix"></image></view>
 					<view class="title">
 						好药师官方客服电话
 						<text>400-648-5566</text>
@@ -67,7 +67,7 @@
 			<view class="logined-h">
 				<view class="logined-header">
 					<view class="logined-header-img">
-						<image :src="login.headImg?login.headImg:'https://m.ehaoyao.com/_nuxt/img/icon-head.9a358f8.png'" mode="widthFix"></image>
+						<image lazy-load :src="login.headImg?login.headImg:'https://m.ehaoyao.com/_nuxt/img/icon-head.9a358f8.png'" mode="widthFix"></image>
 					</view>
 					<view class="logined-header-name">
 						{{login.name}}
@@ -80,7 +80,7 @@
 				<view class="logined-header-content">
 					<uni-grid :column="4" :show-border="false" :square="false">
 						<uni-grid-item v-for="(item, index) in orderList" :key="index" @click.native="toCategory(item)">
-							<view class="img"><image :src="item.image"></image></view>
+							<view class="img"><image lazy-load :src="item.image"></image></view>
 							<view class="text">{{ item.title }}</view>
 						</uni-grid-item>
 					</uni-grid>
@@ -106,7 +106,7 @@
 							<view class="text">我的收藏</view>
 						</uni-grid-item>
 						<uni-grid-item v-for="(item, index) in messageList" :key="index" @click.native="toCategory(item)">
-							<view class="img"><image :src="item.image"></image></view>
+							<view class="img"><image lazy-load :src="item.image"></image></view>
 							<view class="text">{{ item.title }}</view>
 						</uni-grid-item>
 					</uni-grid>

@@ -15,14 +15,14 @@
 		<view class="swiper">
 			<view class="swiper-box">
 				<swiper indicator-dots="true" circular="true" autoplay="true" @change="swiperChange">
-					<swiper-item v-for="(item, index) in HeadDataList.banner" :key="index"><image :src="item.pic" @click="toWebView(item.content)"></image></swiper-item>
+					<swiper-item v-for="(item, index) in HeadDataList.banner" :key="index"><image lazy-load :src="item.pic" @click="toWebView(item.content)"></image></swiper-item>
 				</swiper>
 			</view>
 		</view>
 		<view class="category-list">
 			<uni-grid v-if="HeadDataList.templatedata[0]!==undefined&&HeadDataList.templatedata[0].contentList.length>0" :column="5" :show-border="false" :square="false">
 				<uni-grid-item v-for="(item, index) in HeadDataList.templatedata[0].contentList" :key="index" @click.native="toWebView(item.cmsUrl)">
-					<view class="img"><image :src="item.adPic"></image></view>
+					<view class="img"><image lazy-load :src="item.adPic"></image></view>
 					<view class="text">{{ item.adTitle }}</view>
 				</uni-grid-item>
 			</uni-grid>
@@ -50,7 +50,7 @@
 			<view class="product-list scroll-view">
 				<scroll-view scroll-x="true" @scroll="scroll">
 					<view class="product scroll-prodnct" v-for="(item, index) in pagepurchasesList.purchaseInfo[0].itemInfo" :key="index" @click="toGoods(item,'hot')">
-						<view class="image"><image mode="widthFix" :src="item.itemImage"></image></view>
+						<view class="image"><image lazy-load mode="widthFix" :src="item.itemImage"></image></view>
 						<view class="name">{{ item.itemName }}</view>
 						<view class="info">
 							<view class="price">￥{{ item.itemPrice }}</view>
@@ -64,7 +64,7 @@
 			<view class="product-list scroll-view">
 				<scroll-view scroll-x="true" @scroll="scroll">
 					<view class="product scroll-prodnct" v-for="(item, index) in TailDataList.grabTogether.mobileFlashSaleNewItems" :key="index" @click="toGoods(item)">
-						<view class="image"><image mode="widthFix" :src="item.mainimg3"></image></view>
+						<view class="image"><image lazy-load mode="widthFix" :src="item.mainimg3"></image></view>
 						<view class="name">{{ item.flashSaleProductName }}</view>
 						<view class="info">
 							<view class="price">￥{{ item.promotionPrice }}</view>
@@ -73,7 +73,7 @@
 				</scroll-view>
 			</view>
 		</view> -->
-		<image style="width: 100vw;" :src="HeadDataList.banner[0].pic" mode="widthFix"></image>
+		<image lazy-load style="width: 100vw;" :src="HeadDataList.banner[0].pic" mode="widthFix"></image>
 		<view class="count-down">
 			<cmd-cell-item slot-left>
 				<i class="admire iconfont">&#xe60c;</i>
@@ -81,11 +81,11 @@
 			</cmd-cell-item>
 		</view>
 		<view class="goods-list" v-for="(item, index) in TailDataList.goodTopic" :key="index">
-			<image style="width: 100vw;height: 66vw;" :src="item.picUrl" mode="widthFix"></image>
+			<image lazy-load style="width: 100vw;height: 66vw;" :src="item.picUrl" mode="widthFix"></image>
 			<view class="product-list scroll-view">
 				<scroll-view scroll-x="true">
 					<view class="product scroll-prodnct" v-for="(subItem, subIndex) in item.goodProducts" :key="subIndex" @click="toGoods(subItem)">
-						<view class="image"><image mode="widthFix" :src="subItem.productImg"></image></view>
+						<view class="image"><image lazy-load mode="widthFix" :src="subItem.productImg"></image></view>
 						<view class="name">{{ subItem.productName }}</view>
 						<view class="info">
 							<view class="price">￥{{ subItem.sellPrice }}</view>
@@ -138,7 +138,7 @@
 			<view class="title">新品上市</view>
 			<view class="product-list">
 				<view class="product" v-for="(item, index) in pagination.productList" :key="index" @click="toGoods(item)">
-					<image mode="widthFix" :src="item.Pic800"></image>
+					<image lazy-load mode="widthFix" :src="item.Pic800"></image>
 					<view class="name">{{ item.Advertisement }}</view>
 					<view class="info">
 						<view class="price">￥{{ item.SalePrice }}</view>

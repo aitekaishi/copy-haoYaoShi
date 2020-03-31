@@ -33,7 +33,7 @@
 				<view v-for="(item, index) in shoppingList" :key="index">
 					<view class="shopping-view">
 						<view class="shopping-view-left"><radio style="transform:scale(0.7)" :value="item" :checked="item.checked" @click.native="changeRadio(index)" /></view>
-						<view class="shopping-view-center" @click="toGoods(item,'cart')"><image :src="item.smallPic" mode="widthFix"></image></view>
+						<view class="shopping-view-center" @click="toGoods(item,'cart')"><image lazy-load :src="item.smallPic" mode="widthFix"></image></view>
 						<view class="shopping-view-right">
 							<view class="skuTitle" @click="toGoods(item,'cart')">{{ item.skuTitle }}</view>
 							<view class="specification" @click="toGoods(item,'cart')">规格：{{ item.specification }}</view>
@@ -74,7 +74,7 @@
 			<view class="product-list">
 				<view class="product" v-for="(item, index) in pagination.productList" :key="index">
 					<view   @click="toGoods(item,'cart')">
-						<image mode="widthFix" :src="item.smallPic"></image>
+						<image lazy-load mode="widthFix" :src="item.smallPic"></image>
 						<view class="name">{{ item.genericName }}</view>
 						<view class="smallName">{{ item.skuTitle }}</view>
 						<view class="smallName">规格：{{ item.specification }}</view>

@@ -6,7 +6,7 @@
 		<view class="doctor-list" v-for="(item,index) in doctorList" :key=index>
 			<view class="doctor-list-content">
 				<view class="image">
-					<image :src="item.imgPath" mode="widthFix"></image>
+					<image lazy-load :src="item.imgPath" mode="widthFix"></image>
 				</view>
 				<view class="content">
 					<view class="title">
