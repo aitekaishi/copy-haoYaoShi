@@ -53,8 +53,6 @@ var component = Object(_mySoftWare_HBuilderX_plugins_uniapp_cli_node_modules_dcl
   renderjs
 )
 
-/* hot reload */
-if (false) { var api; }
 component.options.__file = "myProjects/copy-haoYaoShi/pages/login/register.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
@@ -378,7 +376,7 @@ var _api = __webpack_require__(/*! @/api */ 21);function _interopRequireDefault(
 //
 //
 //
-var uniPopup = function uniPopup() {return __webpack_require__.e(/*! import() | components/uni-popup/uni-popup */ "components/uni-popup/uni-popup").then(__webpack_require__.bind(null, /*! @/components/uni-popup/uni-popup.vue */ 170));};var _default = { components: { uniPopup: uniPopup }, watch: { time: function time(n, o) {if (n == 0) {this.countDown = false;}} }, data: function data() {return { member: { password: '', confirmPassword: '', //确认密码
+var uniPopup = function uniPopup() {__webpack_require__.e(/*! require.ensure | components/uni-popup/uni-popup */ "components/uni-popup/uni-popup").then((function () {return resolve(__webpack_require__(/*! @/components/uni-popup/uni-popup.vue */ 170));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { uniPopup: uniPopup }, watch: { time: function time(n, o) {if (n == 0) {this.countDown = false;}} }, data: function data() {return { member: { password: '', confirmPassword: '', //确认密码
         passwordType: true, //密码是否可见
         confirmPasswordType: true //确认密码是否可见
       }, phone: { name: '', imageCode: '', smsCode: '' }, imageCode: '', //图形验证码

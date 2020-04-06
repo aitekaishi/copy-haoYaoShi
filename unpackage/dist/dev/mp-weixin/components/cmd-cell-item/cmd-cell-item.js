@@ -36,8 +36,6 @@ var component = Object(_mySoftWare_HBuilderX_plugins_uniapp_cli_node_modules_dcl
   renderjs
 )
 
-/* hot reload */
-if (false) { var api; }
 component.options.__file = "myProjects/copy-haoYaoShi/components/cmd-cell-item/cmd-cell-item.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
@@ -119,7 +117,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var cmdIcon = function cmdIcon() {return __webpack_require__.e(/*! import() | components/cmd-icon/cmd-icon */ "components/cmd-icon/cmd-icon").then(__webpack_require__.bind(null, /*! ../cmd-icon/cmd-icon.vue */ 227));};
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var cmdIcon = function cmdIcon() {__webpack_require__.e(/*! require.ensure | components/cmd-icon/cmd-icon */ "components/cmd-icon/cmd-icon").then((function () {return resolve(__webpack_require__(/*! ../cmd-icon/cmd-icon.vue */ 227));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
 
 
 
@@ -151,25 +149,25 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 /**  
-                                                                                                                                                                                                                                         * 列表单元组件
-                                                                                                                                                                                                                                         * @description 列表用于展现并列层级的信息内容，列表可承载功能入口、功能操作、信息展示等功能。  
-                                                                                                                                                                                                                                         * @tutorial http://ext.dcloud.net.cn/plugin?id=177  
-                                                                                                                                                                                                                                         * @property {String} title 标题 - 默认：空  
-                                                                                                                                                                                                                                         * @property {String} brief 标题下描述文本 - 默认：空  
-                                                                                                                                                                                                                                         * @property {String} addon 附加文本 - 默认：空  
-                                                                                                                                                                                                                                         * @property {String} addon2 附加文本2 - 在列表单元下显示文字说明，默认：空  
-                                                                                                                                                                                                                                         * @property {Boolean} arrow 动作箭头标识 - 默认：false  
-                                                                                                                                                                                                                                         * @property {Boolean} disabled 禁用状态 - 默认：false  
-                                                                                                                                                                                                                                         * @property {Boolean} border 下边框线列表单元项，默认：true  
-                                                                                                                                                                                                                                         * @property {Boolean} show-switch 显示开关Switch - 默认：false  
-                                                                                                                                                                                                                                         * @property {Boolean} switch-state 开关选中状态 - 默认：false  
-                                                                                                                                                                                                                                         * @property {Boolean} switch-color 开关颜色 - 默认：蓝色，MP绿色  
-                                                                                                                                                                                                                                         * @property {Boolean} slot-left 插槽左 - 不可同时打开两个插槽，默认：false  
-                                                                                                                                                                                                                                         * @property {Boolean} slot-right 插槽右 - 不可再使用switch addon，默认：false  
-                                                                                                                                                                                                                                         * @event {Function} click 列表单元项 点击事件  
-                                                                                                                                                                                                                                         * @event {Function} switch 列表单元项切换 Switch 触发事件  
-                                                                                                                                                                                                                                         * @example <cmd-cell-item title="普通条目" addon="附加文案" arrow></cmd-cell-item>
-                                                                                                                                                                                                                                         */var _default =
+                                                                                                                                                                                                                                                                 * 列表单元组件
+                                                                                                                                                                                                                                                                 * @description 列表用于展现并列层级的信息内容，列表可承载功能入口、功能操作、信息展示等功能。  
+                                                                                                                                                                                                                                                                 * @tutorial http://ext.dcloud.net.cn/plugin?id=177  
+                                                                                                                                                                                                                                                                 * @property {String} title 标题 - 默认：空  
+                                                                                                                                                                                                                                                                 * @property {String} brief 标题下描述文本 - 默认：空  
+                                                                                                                                                                                                                                                                 * @property {String} addon 附加文本 - 默认：空  
+                                                                                                                                                                                                                                                                 * @property {String} addon2 附加文本2 - 在列表单元下显示文字说明，默认：空  
+                                                                                                                                                                                                                                                                 * @property {Boolean} arrow 动作箭头标识 - 默认：false  
+                                                                                                                                                                                                                                                                 * @property {Boolean} disabled 禁用状态 - 默认：false  
+                                                                                                                                                                                                                                                                 * @property {Boolean} border 下边框线列表单元项，默认：true  
+                                                                                                                                                                                                                                                                 * @property {Boolean} show-switch 显示开关Switch - 默认：false  
+                                                                                                                                                                                                                                                                 * @property {Boolean} switch-state 开关选中状态 - 默认：false  
+                                                                                                                                                                                                                                                                 * @property {Boolean} switch-color 开关颜色 - 默认：蓝色，MP绿色  
+                                                                                                                                                                                                                                                                 * @property {Boolean} slot-left 插槽左 - 不可同时打开两个插槽，默认：false  
+                                                                                                                                                                                                                                                                 * @property {Boolean} slot-right 插槽右 - 不可再使用switch addon，默认：false  
+                                                                                                                                                                                                                                                                 * @event {Function} click 列表单元项 点击事件  
+                                                                                                                                                                                                                                                                 * @event {Function} switch 列表单元项切换 Switch 触发事件  
+                                                                                                                                                                                                                                                                 * @example <cmd-cell-item title="普通条目" addon="附加文案" arrow></cmd-cell-item>
+                                                                                                                                                                                                                                                                 */var _default =
 {
   name: 'cmd-cell-item',
 
