@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "问药师",
-  "navigationBarTextStyle": "black",
-  "enablePullDownRefresh": true,
-  "onReachBottomDistance": 50,
-  "usingComponents": {}
-}

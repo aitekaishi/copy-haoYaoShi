@@ -45,5 +45,32 @@ export default {
 				3600 - minutes * 60 : '0' + (Math.floor(newDate / 1000) - hours * 3600 - minutes * 60);
 			time = `${hours}:${minutes}:${seconds}`;
 		}, 1000);
+	},
+	//占位图
+	placeholderChart(obj,imgSrc) {
+		let url = obj[imgSrc]
+		let src = obj[imgSrc];
+		// #ifdef H5
+		if(obj[imgSrc].indexOf('//p1')>-1){
+			src = obj[imgSrc].replace('https://p1.maiyaole.com/', '/wx1/')
+		}
+		if(obj[imgSrc].indexOf('//p2')>-1){
+			src = obj[imgSrc].replace('https://p2.maiyaole.com/', '/wx3/')
+		}
+		if(obj[imgSrc].indexOf('//p3')>-1){
+			src = obj[imgSrc].replace('https://p3.maiyaole.com/', '/wx3/')
+		}
+		if(obj[imgSrc].indexOf('//p4')>-1){
+			src = obj[imgSrc].replace('https://p4.maiyaole.com/', '/wx4/')
+		}
+		// #endif
+		obj[imgSrc] = '/static/haoyaoshi-background.png';
+		uni.request({
+			url: src,
+			responseType: 'arraybuffer',
+			success: res => {
+				obj[imgSrc] = url
+			}
+		});
 	}
 }

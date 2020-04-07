@@ -103,6 +103,38 @@
 				    "changeOrigin" : true,
 				    "secure" : false,
 					"pathRewrite":{"^/fangkuaiyi":""}
+				},
+				"/wx1" : {
+				    "target" : "https://p1.maiyaole.com/",
+				    "changeOrigin" : true,
+				    "secure" : false,
+				    "pathRewrite" : {
+				        "^/wx1" : ""
+				    }
+				},
+				"/wx2" : {
+				    "target" : "https://p1.maiyaole.com/",
+				    "changeOrigin" : true,
+				    "secure" : false,
+				    "pathRewrite" : {
+				        "^/wx2" : ""
+				    }
+				},
+				"/wx3" : {
+				    "target" : "https://p3.maiyaole.com/",
+				    "changeOrigin" : true,
+				    "secure" : false,
+				    "pathRewrite" : {
+				        "^/wx3" : ""
+				    }
+				},
+				"/wx4" : {
+				    "target" : "https://p4.maiyaole.com/",
+				    "changeOrigin" : true,
+				    "secure" : false,
+				    "pathRewrite" : {
+				        "^/wx4" : ""
+				    }
 				}
             }
         }

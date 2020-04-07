@@ -20,8 +20,8 @@
 			</view>
 		</view>
 		<view class="category-list">
-			<uni-grid v-if="HeadDataList.templatedata[0]!==undefined&&HeadDataList.templatedata[0].contentList.length>0" :column="5" :show-border="false" :square="false">
-				<uni-grid-item v-for="(item, index) in HeadDataList.templatedata[0].contentList" :key="index" @click.native="toWebView(item.cmsUrl)">
+			<uni-grid :column="5" :show-border="false" :square="false">
+				<uni-grid-item v-for="(item, index) in templatedata" :key="index" @click.native="toWebView(item.cmsUrl)">
 					<view class="img"><image lazy-load :src="item.adPic"></image></view>
 					<view class="text">{{ item.adTitle }}</view>
 				</uni-grid-item>
@@ -37,7 +37,7 @@
 			</swiper>
 		</view>
 		<view class="thick-line"></view>
-		<view class="count-down" v-if="pagepurchasesList.purchaseInfo.length">
+		<!-- <view class="count-down" v-if="pagepurchasesList.purchaseInfo.length">
 			<cmd-cell-item arrow slot-left addon="更多">
 				<text class="text1">{{ pagepurchasesList.purchaseInfo[0].seckillActivityName }}</text>
 				<text class="text2">距时间仅剩</text>
@@ -59,7 +59,7 @@
 					</view>
 				</scroll-view>
 			</view>
-		</view>
+		</view> -->
 		<!-- <view class="goods-list">
 			<view class="product-list scroll-view">
 				<scroll-view scroll-x="true" @scroll="scroll">
@@ -73,7 +73,7 @@
 				</scroll-view>
 			</view>
 		</view> -->
-		<image lazy-load style="width: 100vw;" :src="HeadDataList.banner[0].pic" mode="widthFix"></image>
+		<!-- <image lazy-load style="width: 100vw;" :src="HeadDataList.banner[0].pic" mode="widthFix"></image> -->
 		<view class="count-down">
 			<cmd-cell-item slot-left>
 				<i class="admire iconfont">&#xe60c;</i>
@@ -195,6 +195,7 @@ export default {
 			TailDataList: {}, //精选专题
 			healthNewList: {}, //常见疾病、最新疾病资讯
 			HeadDataList: {}, //banner、分类，通知信息
+			templatedata:[],//分类图标
 			time: '', //倒计时
 			currentSwiper: 0, //swiper index
 			backTop: {//回到顶部
@@ -205,12 +206,6 @@ export default {
 	//滑动触发
 	onPageScroll(e) {
 		this.backTop.scrollTop = e.scrollTop;
-		if (this.$localstorageFactory.get('first_time')) {
-			this.getTailDataList();
-			this.getNewList();
-			this.getIndexList();
-			this.$localstorageFactory.set('first_time', false);
-		}
 	},
 	//下拉刷新
 	onPullDownRefresh() {
@@ -228,24 +223,26 @@ export default {
 		}
 		that.getHeadDataList();
 		await that.pagepurchases();
-		if(that.pagepurchasesList.purchaseInfo.length){
-			that.$localstorageFactory.set('activityEndTime',that.pagepurchasesList.purchaseInfo[0].activityEndTime)
-			let timer = setInterval(() => {
-				let newDate = new Date(that.pagepurchasesList.purchaseInfo[0].activityEndTime) - new Date()
-				if (newDate <= 0) {
-					that.time = '00:00:00'
-					clearInterval(timer)
-				}
-				let hours = Math.floor(newDate / 1000 / 60 / 60) > 9 ? Math.floor(newDate / 1000 / 60 / 60) : '0' + Math.floor(
-					newDate / 1000 / 60 / 60);
-				let minutes = Math.floor(newDate / 1000 / 60) - hours * 60 > 9 ? Math.floor(newDate / 1000 / 60) - hours * 60 :
-					'0' + (Math.floor(newDate / 1000 / 60) - hours * 60);
-				let seconds = Math.floor(newDate / 1000) - hours * 3600 - minutes * 60 > 9 ? Math.floor(newDate / 1000) - hours *
-					3600 - minutes * 60 : '0' + (Math.floor(newDate / 1000) - hours * 3600 - minutes * 60);
-				that.time = `${hours}:${minutes}:${seconds}`;
-			}, 1000);
-		}
-		that.$localstorageFactory.set('first_time', true);
+		that.getTailDataList();
+		that.getNewList();
+		that.getIndexList();
+		// if(that.pagepurchasesList.purchaseInfo.length){
+		// 	that.$localstorageFactory.set('activityEndTime',that.pagepurchasesList.purchaseInfo[0].activityEndTime)
+		// 	let timer = setInterval(() => {
+		// 		let newDate = new Date(that.pagepurchasesList.purchaseInfo[0].activityEndTime) - new Date()
+		// 		if (newDate <= 0) {
+		// 			that.time = '00:00:00'
+		// 			clearInterval(timer)
+		// 		}
+		// 		let hours = Math.floor(newDate / 1000 / 60 / 60) > 9 ? Math.floor(newDate / 1000 / 60 / 60) : '0' + Math.floor(
+		// 			newDate / 1000 / 60 / 60);
+		// 		let minutes = Math.floor(newDate / 1000 / 60) - hours * 60 > 9 ? Math.floor(newDate / 1000 / 60) - hours * 60 :
+		// 			'0' + (Math.floor(newDate / 1000 / 60) - hours * 60);
+		// 		let seconds = Math.floor(newDate / 1000) - hours * 3600 - minutes * 60 > 9 ? Math.floor(newDate / 1000) - hours *
+		// 			3600 - minutes * 60 : '0' + (Math.floor(newDate / 1000) - hours * 3600 - minutes * 60);
+		// 		that.time = `${hours}:${minutes}:${seconds}`;
+		// 	}, 1000);
+		// }
 	},
 	//上拉加载更多
 	onReachBottom() {
@@ -283,7 +280,8 @@ export default {
 				{ tradername: 'yw_app', trader: 'h5', closesignature: 'yes', signature_method: 'md5', timestamp: new Date().getTime(), signature: 'liupan' },
 				res => {
 					that.HeadDataList = res.data;
-					if(that.HeadDataList.notice.length == 1){
+					that.templatedata = that.HeadDataList.templatedata[0].contentList
+					if(that.HeadDataList.notice!=null&&that.HeadDataList.notice.length == 1){
 						that.HeadDataList.notice.push(that.HeadDataList.notice[0])
 					}
 				}
@@ -306,6 +304,11 @@ export default {
 				{ tradername: 'yw_app', trader: 'h5', closesignature: 'yes', signature_method: 'md5', timestamp: new Date().getTime(), signature: 'liupan' },
 				res => {
 					that.TailDataList = res.data;
+					for (let i = 0; i < that.TailDataList.goodTopic.length; i++) {
+						for (let j = 0; j < that.TailDataList.goodTopic[i].goodProducts.length; j++) {
+							//that.$common.placeholderChart(that.TailDataList.goodTopic[i].goodProducts[j],'productImg')
+						}
+					}
 				}
 			);
 		},
@@ -330,7 +333,6 @@ export default {
 		},
 		//咨询按钮点击
 		trigger(e) {
-			console.log(e);
 			uni.showModal({
 				title: '提示',
 				content: `您选中了${e.item.text}`,
